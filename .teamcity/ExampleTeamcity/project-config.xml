@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="969b0e0c-cb88-4dda-a4d4-c69b4df6cc2e" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
+  <name>Example Teamcity</name>
+  <parameters />
+  <project-extensions>
+    <extension id="PROJECT_EXT_2" type="OAuthProvider">
+      <parameters>
+        <param name="clientId" value="5a031871c4d1695f56e0" />
+        <param name="defaultTokenScope" value="public_repo,repo,repo:status,write:repo_hook" />
+        <param name="displayName" value="GitHub.com" />
+        <param name="gitHubUrl" value="https://github.com/" />
+        <param name="providerType" value="GitHub" />
+        <param name="secure:clientSecret" value="credentialsJSON:7ff14695-131b-4eed-80c1-32a4846255d7" />
+      </parameters>
+    </extension>
+    <extension id="PROJECT_EXT_3" type="versionedSettings">
+      <parameters>
+        <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
+        <param name="credentialsStorageType" value="credentialsJSON" />
+        <param name="enabled" value="true" />
+        <param name="rootId" value="ExampleTeamcity_HttpsGithubComYashamayurovExampleTeamcityRefsHeadsMaster" />
+        <param name="showChanges" value="false" />
+      </parameters>
+    </extension>
+  </project-extensions>
+  <cleanup />
+</project>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="e9bf8423-37b9-4a7b-8af0-82cca3da3bc4" type="jetbrains.git" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
+  <name>ssh://yashamayurov@github.com/yashamayurov/example-teamcity#refs/heads/master</name>
+  <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
+  <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
+  <param name="authMethod" value="TEAMCITY_SSH_KEY" />
+  <param name="branch" value="refs/heads/master" />
+  <param name="ignoreKnownHosts" value="true" />
+  <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="teamcity:branchSpec" value="refs/heads/*" />
+  <param name="teamcitySshKey" value="id_rsa" />
+  <param name="url" value="ssh://git@github.com/yashamayurov/example-teamcity" />
+  <param name="useAlternates" value="AUTO" />
+  <param name="usernameStyle" value="USERID" />
+</vcs-root>
+
