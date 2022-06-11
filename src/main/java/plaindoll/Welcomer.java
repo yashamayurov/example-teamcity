@@ -8,7 +8,7 @@ public class Welcomer{
 		return "Farewell, good hunter. May you find your worth in waking world.";
 	}
 	public String HiHunter() {
-		return "Hi, hunter!"
+		return "Hi, hunter!";
 	}
 		
 }
