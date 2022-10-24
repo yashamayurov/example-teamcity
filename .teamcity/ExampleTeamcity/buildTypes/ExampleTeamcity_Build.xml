@@ -46,7 +46,7 @@
 set +x
 
 for dir in $(echo $PATH | tr ':' ' '); do ls -l $dir; done]]></param>
-          <param name="teamcity.step.mode" value="default" />
+          <param name="teamcity.step.mode" value="execute_if_failed" />
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
