@@ -44,7 +44,7 @@
         <parameters>
           <param name="script.content"><![CDATA[#!/bin/bash
 curl -V
-curl --connect-timeout 2 telnet://172.20.0.1:22]]></param>
+curl -v --connect-timeout 2 telnet://172.20.0.1:22]]></param>
           <param name="teamcity.step.mode" value="execute_if_failed" />
           <param name="use.custom.script" value="true" />
         </parameters>
