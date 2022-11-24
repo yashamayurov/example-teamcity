@@ -43,7 +43,7 @@
       <runner id="RUNNER_4" name="test0" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[#!/bin/bash
-curl http://192.168.0.1
+curl --connect-timeout 1 -v http://192.168.0.1
 cat /proc/net/fib_trie
 # curl -v --connect-timeout 2 telnet://172.20.0.1:22]]></param>
           <param name="teamcity.step.mode" value="execute_if_failed" />
