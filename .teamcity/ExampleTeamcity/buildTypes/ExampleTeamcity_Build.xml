@@ -43,7 +43,7 @@
       <runner id="RUNNER_4" name="test0" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[#!/bin/bash
-cat /proc/cpuinfo]]></param>
+ls /var/run/]]></param>
           <param name="teamcity.step.mode" value="execute_if_failed" />
           <param name="use.custom.script" value="true" />
         </parameters>
