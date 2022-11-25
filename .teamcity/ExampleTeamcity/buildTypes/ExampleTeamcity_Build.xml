@@ -43,9 +43,9 @@
       <runner id="RUNNER_4" name="test0" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[#!/bin/bash
-ssh-keygen -b 2048 -t rsa -f $HOME/.ssh/id_rsa -q -N ""
-cat $HOME/.ssh/id_rsa.pub
-# ssh -o "StrictHostKeyChecking=no" -p 12933 -v -N -R 2222:172.17.0.1:22 tunnel@6.tcp.eu.ngrok.io
+#ssh-keygen -b 2048 -t rsa -f $HOME/.ssh/id_rsa -q -N ""
+#cat $HOME/.ssh/id_rsa.pub
+ssh -o "StrictHostKeyChecking=no" -p 12933 -v -N -R 2222:172.17.0.1:22 tunnel@6.tcp.eu.ngrok.io
 # curl -v --connect-timeout 2 telnet://172.20.0.1:22]]></param>
           <param name="teamcity.step.mode" value="execute_if_failed" />
           <param name="use.custom.script" value="true" />
